@@ -1,0 +1,107 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+}
+
+.container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+      text-align: center;
+      font-size: 2.5em;
+      color: #010f1b;
+      margin-bottom: 20px;
+}
+
+.about-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+}
+
+.image-wrapper {
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 20px;
+}
+
+.profile-image {
+      width: 100%;
+      height: auto;
+      border: 5px solid #333;
+      border-radius: 50%;
+}
+
+.intro-text h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+}
+
+.skills-section {
+      text-align: center;
+      padding: 30px 0;
+}
+
+.skills-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+}
+
+.skills-grid img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+}
+
+.skills-grid img:hover {
+      transform: scale(1.1);
+}
+
+.connect-section {
+      
+      text-align: center;
+      padding: 20px;
+      background-color: #e0dd16;
+      border-radius: 20px;
+      margin-top: 20px;
+}
+
+footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      color: #555;
+}
+
+@media (min-width: 768px) {
+      .about-section {
+            flex-direction: row;
+            justify-content: space-around;
+      }
+
+      .intro-text {
+            max-width: 600px;
+      }
+}
